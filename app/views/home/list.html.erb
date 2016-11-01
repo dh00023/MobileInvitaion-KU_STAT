@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="row text-center">
+
+        <h1>참석여부리스트</h1>
+        <% @persons.each do |person| %>
+          <p><strong><%= person.id %></strong> <strong><%= person.name %></strong> <%= person.phone_number %> <%=person.attendance%></p>
+        <% end %>
+        <br>
+    </div>
+</div>
